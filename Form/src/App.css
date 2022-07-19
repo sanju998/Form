@@ -1,0 +1,39 @@
+.form-div {
+  width: 50%;
+  transform: skewY(2deg);
+  transition: 1.5s;
+}
+
+.form-input {
+  border: none !important;
+  border-bottom: 2px solid green !important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: gray;
+}
+
+.form-input::placeholder {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
+}
+
+.button-4 {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .form-div {
+    width: 75%;
+  }
+}
+
+.form-input:focus {
+  outline: unset !important;
+}
+
+.container:hover .form-div {
+  transform: skewY(-5deg);
+  transition: 1s;
+}
